@@ -89,7 +89,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="lbVidas">
       <Properties>
         <Property name="text" type="java.lang.String" value="Vidas: 4"/>
       </Properties>

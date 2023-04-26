@@ -4,17 +4,22 @@
  */
 package view;
 
+import controler.Fuente;
+
 /**
  *
  * @author cristopher
  */
 public class NivelFrame extends javax.swing.JFrame {
-
+//    private String urlFuentePrin = "fuentes/REWARD PERSONAL USE.ttf";
     /**
      * Creates new form NivelFrame
      */
     public NivelFrame() {
         initComponents();
+//        Fuente principalFont = new Fuente(urlFuentePrin);
+        
+//        this.setFont(principalFont.getFuente(1, 14));
     }
 
     /**
@@ -30,7 +35,7 @@ public class NivelFrame extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        lbVidas = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -65,8 +70,8 @@ public class NivelFrame extends javax.swing.JFrame {
         jLabel2.setText("Puntaje: 99999");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(675, 9, -1, -1));
 
-        jLabel3.setText("Vidas: 4");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(398, 9, -1, -1));
+        lbVidas.setText("Vidas: 4");
+        getContentPane().add(lbVidas, new org.netbeans.lib.awtextra.AbsoluteConstraints(398, 9, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/nivel1.png"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -114,8 +119,8 @@ public class NivelFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lbVidas;
     // End of variables declaration//GEN-END:variables
 }
