@@ -30,48 +30,42 @@ public class PausaFrame extends javax.swing.JFrame {
         btnContinuar = new javax.swing.JButton();
         btnOpciones = new javax.swing.JButton();
         btnMenu = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/botonCir.png"))); // NOI18N
         btnCerrar.setText("X");
+        btnCerrar.setContentAreaFilled(false);
+        btnCerrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, 60, 50));
 
+        btnContinuar.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        btnContinuar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/botonRec.png"))); // NOI18N
         btnContinuar.setText("Continuar");
+        btnContinuar.setContentAreaFilled(false);
+        btnContinuar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(btnContinuar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 78, 130, 50));
 
+        btnOpciones.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        btnOpciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/botonRec.png"))); // NOI18N
         btnOpciones.setText("Opciones");
+        btnOpciones.setContentAreaFilled(false);
+        btnOpciones.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(btnOpciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 130, 50));
 
+        btnMenu.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        btnMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/botonRec.png"))); // NOI18N
         btnMenu.setText("Menu");
+        btnMenu.setContentAreaFilled(false);
+        btnMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(btnMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, 130, 50));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnCerrar))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(53, 53, 53)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnOpciones)
-                            .addComponent(btnContinuar)
-                            .addComponent(btnMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 45, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnCerrar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnContinuar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnOpciones)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnMenu)
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/pausa.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -117,5 +111,6 @@ public class PausaFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnContinuar;
     private javax.swing.JButton btnMenu;
     private javax.swing.JButton btnOpciones;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

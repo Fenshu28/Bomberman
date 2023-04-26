@@ -34,9 +34,9 @@ public class NivelFrame extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setResizable(false);
         setSize(new java.awt.Dimension(800, 600));
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 204));
 
@@ -51,31 +51,25 @@ public class NivelFrame extends javax.swing.JFrame {
             .addGap(0, 480, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPanel1);
-        jPanel1.setBounds(77, 85, 640, 480);
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 85, -1, -1));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/botonRec.png"))); // NOI18N
         jButton1.setText("Pausa");
         jButton1.setContentAreaFilled(false);
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(jButton1);
-        jButton1.setBounds(20, 10, 120, 36);
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 120, -1));
 
         jLabel1.setText("Tiempo: 00:00");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(486, 9, 93, 18);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(486, 9, -1, -1));
 
         jLabel2.setText("Puntaje: 99999");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(675, 9, 97, 18);
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(675, 9, -1, -1));
 
         jLabel3.setText("Vidas: 4");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(398, 9, 52, 18);
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(398, 9, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/nivel1.png"))); // NOI18N
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(0, 0, 800, 600);
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
         setLocationRelativeTo(null);

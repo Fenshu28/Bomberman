@@ -30,46 +30,41 @@ public class OpcionesFrame extends javax.swing.JFrame {
         btnSfx = new javax.swing.JButton();
         btnCreditos = new javax.swing.JButton();
         btnCerrar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setLocationByPlatform(true);
+        setResizable(false);
+        setSize(new java.awt.Dimension(400, 300));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnSoundtrack.setForeground(new java.awt.Color(51, 51, 51));
+        btnSoundtrack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/botonRec.png"))); // NOI18N
         btnSoundtrack.setText("Soundtrack: On");
+        btnSoundtrack.setContentAreaFilled(false);
+        btnSoundtrack.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(btnSoundtrack, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 220, 30));
 
+        btnSfx.setForeground(new java.awt.Color(51, 51, 51));
+        btnSfx.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/botonRec.png"))); // NOI18N
         btnSfx.setText("SFX: On");
+        btnSfx.setContentAreaFilled(false);
+        btnSfx.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(btnSfx, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, 220, 30));
 
+        btnCreditos.setForeground(new java.awt.Color(51, 51, 51));
+        btnCreditos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/botonRec.png"))); // NOI18N
         btnCreditos.setText("Creditos");
+        btnCreditos.setContentAreaFilled(false);
+        btnCreditos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(btnCreditos, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 220, 30));
 
         btnCerrar.setText("X");
+        getContentPane().add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, -1, 18));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnCerrar))
-                    .addComponent(btnSoundtrack, javax.swing.GroupLayout.Alignment.CENTER, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE)
-                    .addComponent(btnSfx, javax.swing.GroupLayout.Alignment.CENTER, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnCreditos, javax.swing.GroupLayout.Alignment.CENTER, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnSoundtrack)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnSfx, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnCreditos, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/creditos_opciones.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -115,5 +110,6 @@ public class OpcionesFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnCreditos;
     private javax.swing.JButton btnSfx;
     private javax.swing.JButton btnSoundtrack;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
